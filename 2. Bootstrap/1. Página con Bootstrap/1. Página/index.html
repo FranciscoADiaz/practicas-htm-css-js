@@ -1,0 +1,410 @@
+<!DOCTYPE html prefix="og: https://ogp.me/ns#">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messi</title>
+    <!-- CSS Bootstrap v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+          crossorigin="anonymous"/>
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!--Open Graph-->
+    <title>Messi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="Messi - El Mejor Jugador de Fútbol del Mundo">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://franciscoadiaz.github.io/Messi/img/messi.avif">
+    <meta property="og:url" content="https://franciscoadiaz.github.io/Messi/">
+    <meta property="og:type" content="website">
+
+   <!--Permiso para ocupar iconos redes sociales-->
+   <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos"></a>
+  </head>
+  <body class="">
+
+
+
+
+<!--BARRA DE NAVEGACIÓN-->
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top navbar-main"> <!--la primera clase define la estructura de la barra de navegación, la otra indica que cambiará a la versión desplegable en dispositivos medianos o más chicos, la otra es para el color de fondo, la otra también es para el color de fondo para que tape el contenido detrás del menú desplegable, la otra es para que quede fija al hacer scroll y la última es una clase personalizada-->
+<div class="container">
+
+  <!--Marca-->
+  <a href="#" class="navbar-brand">
+    <img src="img/icons/afa.png" alt="afa" >
+    <img src="./img/icons/copa.png" alt="Copa" class="rounded-circle mb-10" >
+  </a>
+
+
+
+ <!--Botón Desplegable (Este botón va antes de los ancla porque sino funciona mal)-->
+ <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" type="button" data-toggle="collapse" 
+ data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon" aria-expanded="flase" aria-label="Barra de navegación"><span class="navbar-toggle-icon"></span>
+ </button>
+
+
+  <!--Elementos ancla-->
+  <div class="collapse navbar-collapse" id="mainNav">
+    <div class="nav ms-auto flex-column align-items-center flex-md-row">
+    <a href="index.html" class="nav-link active">Inicio</a>
+    <a href="#acerca-de" class="nav-link">Acerca de</a>
+    <a href="#galeria" class="nav-link">Galería</a>
+    <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+    </div>
+
+</div>
+</nav>
+
+
+
+
+
+<!--HEADER (ENCABEZADO)-->
+   <div class="container">
+   <header class="row align-items-center header-main"> <!--Define el header como una fila, sus elementos dentro van a estar centrados de forma vertical y la última es una clase personalizada-->
+  
+<!--Columna 1-->
+  <div class="col-md-7 text-center text-md-start"> <!--para que ocupe 7 columnas y los elementos estén centrados en pantalla pequelas pero en mediana y grande estén al inicio/izquierda-->
+
+
+  <!--Saludo-->
+  <h1 class="display-2"> <!--Grosor del texto-->
+    Hola, <br> <!--Completa el bloque para que el siguiente elemento pase abajo-->
+    Soy Messi
+  </h1>
+
+  <!--Profesión-->
+  <P class="text-muted fw-light text-capitalize"> <!--la primera clase hace que el texto tome un color claro, la otra hace que el texto sea finito y la última hace que las palabras comiencen con mayúscula-->
+    Lionel Andrés Messi: Futbolista argentino (Rosario, Santa Fe, 1987). 
+  </P>
+
+  <!--Redes Sociales-->
+  <div class="redes-sociales">
+    <!--Fb-->
+    <a href="https://www.facebook.com/leomessi" target="_blank">
+      <img src="./img/icons/fb.png" alt="facebook" class="fb">
+    </a>
+    <!--Tw-->
+    <a href="https://twitter.com/Lionel_Messi_ID" target="_blank">
+      <img src="./img/icons/tw.png" alt="twitter" class="tw">
+    </a>  
+     <!--Ig-->
+     <a href="https://www.instagram.com/leomessi/" target="_blank">
+      <img src="./img/icons/ig.png" alt="instagram" class="ig">
+    </a>
+  </div>
+  </div>
+  
+  
+  
+  <!--Columna 2-->
+  <div class="col-12 col-md-5 asf">
+  <div class="position-relative shadow messi">
+    <img src="./img/messi.avif" alt="Messi" class="w-100"/>
+  </div>
+  </div>
+    </header>
+
+
+
+
+
+  
+    <!--Línea para separar contenidos de un mismo tema-->
+  <hr/>
+  <!--ACERCA DE-->
+    <section id="acerca-de" class="row justify-content-around text-center">
+  <!--Title-->
+  <h2 class="col-12 display-4 text-capitalize mb-3">
+  Acerca de
+  </h2>
+  <!--Cards-->
+  <!--Card #1-->
+  <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light my-3">
+    <!--Icon-->
+    <img src="./img/icons/trofeo.avif" 
+    alt="Icon Pen" 
+    class="bg-info bg-gradient d-inline-bloc rounded-circle mb-3 icon-acerca">
+    <!--Title-->
+    <h3 class="text-capitalize">
+      Mis trofeos
+    </h3>
+    <!--Description-->
+    <p class="text-muted">
+      Un trofeo es una recompensa por una tarea específica y usualmente después sirve como prueba de esta acción. Mayoritariamente los trofeos son copas entregadas como premiación en eventos deportivos, y pueden venir acompañadas de medallas de oro, de plata y de bronce.
+    </p>
+    <!--Button-->
+  <a href="https://www.dazn.com/es-ES/news/f%C3%BAtbol/cuantos-titulos-tiene-leo-messi-en-su-carrera/1336ommbjogog1twwl0930ixi5" 
+  class="btn btn-outline-danger" 
+  target="_blank"> 
+  Ir 
+  </a>
+  </article>
+  
+  <!--Card #2-->
+  <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light my-3">
+    <!--Icon-->
+    <img src="./img/icons/pelota.jpg" 
+    alt="Icon code" 
+    class="bg-info bg-gradient d-inline-bloc rounded-circle mb-3 icon-acerca">
+    <!--Title-->
+    <h3 class="text-capitalize">
+     Mi profesión
+    </h3>
+    <!--Description-->
+    <p class="text-muted">
+      Futbolista argentino que juega como delantero o centrocampista. Jugador histórico del Fútbol Club Barcelona, al que estuvo ligado veinte años, desde 2021 integra el plantel del Paris Saint-Germain de la Ligue 1 de Francia.
+    </p>
+    <!--Button-->
+  <a href="https://www.biografiasyvidas.com/biografia/m/messi.htm" 
+  class="btn btn-outline-danger" 
+  target="_blank"> 
+  Ir 
+  </a>
+  </article>
+  
+  <!--Card #3-->
+  <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light my-3">
+    <!--Icon-->
+    <img src="./img/icons/marcamessi.jpg" 
+    alt="Icon Brand" 
+    class="bg-info bg-gradient d-inline-bloc rounded-circle mb-3 icon-acerca">
+    <!--Title-->
+    <h3 class="text-capitalize">
+      Mi marca
+    </h3>
+    <!--Description-->
+    <p class="text-muted">
+      Bienvenido a The Messi Store, la fuente exclusiva de la marca oficial de estilo de vida premium de la leyenda del fútbol Leo Messi: The Messi Brand. El principal objetivo de nuestra marca es extender el núcleo de los valores, la visión y el espíritu deportivo de Leo desde el campo hasta la indumentaria.
+    </p>
+    <!--Button-->
+  <a href="https://www.themessistore.com/" 
+  class="btn btn-outline-danger" 
+  target="_blank"> 
+  Ir 
+  </a>
+  </article>
+    </section>
+  
+  <!--QUIÉN SOY-->
+  <section class="row justify-content-center text-center text-md-start">
+    <!--Title-->
+    <h2 class="col-md-4 text-center display-4 text-capitalize">
+  ¿Quién soy?
+    </h2>
+    <!--Information-->
+  <div class="col-8 col-md-8">
+    <p class="text-muted fw-light">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius sint saepe facilis ducimus illo suscipit, harum architecto nesciunt est sunt facere, earum, quo quae non culpa deserunt! Maiores, accusantium.
+    </p>
+    <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank" class="btn btn-danger rounded px-10">
+      Visita mi wikipedia
+    </a>
+  </div>
+  </section>
+  <!--Línea para separar contenidos de un mismo tema-->
+  <hr/>
+  
+  
+
+
+  <!--GALERÍA DE FOTOS-->
+ <main id="galeria" class="justify-content-center pt-5">
+ <div class="row">
+
+  <h2 class="col-12 py-3 text-center display-4">
+    <!--Galería de Fotos-->
+    </h2>
+
+    <!--Columna #1-->
+    <div class="col-12 col-md-4">
+      <div class="row">
+        <!--IMG #1-->
+        <a 
+        href="" class="col-12 mb-3 fotos" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+        <!--enlace con una imagen dentro. El enlace tiene un primer atributo que indica que debe activarse un modal cuando 
+        se le de clic y el segundo atributo indica qué el modal que debe activarse tiene el id modal-portfolio-->
+        <img src="img/m1.jpg" alt="M1" class="w-100 img-btn-modal">
+        </a>
+        <!--IMG #2-->
+        <a 
+        href="" class="col-12 mb-3 fotos" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+        <img src="img/m2.jpg" alt="m2" class="w-100 img-btn-modal">
+        </a>
+  
+        <!--IMG #3-->
+        <a href="" class="col-12 fotos" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+        <img src="img/m1.avif" alt="messiamerica" class="w-100 img-btn-modal">
+        </a>     
+      </div>
+    </div>
+  
+    <!--Columna #2-->
+    <div class="col-12 col-md-8">
+      <div class="row">
+            <!--IMG #1-->
+            <a href="" class="col-12 mb-3 fotos" data-bs-toggle="modal" data-bs-target="#modal-portfolio"> 
+            <!--enlace con una imagen dentro. El enlace tiene un primer atributo que indica que debe activarse un modal cuando 
+            se le de clic y el segundo atributo indica qué el modal que debe activarse tiene el id modal-portfolio-->
+            <img src="img/messimundial.webp" alt="messimundial" class="w-100 img-btn-modal">
+            </a>
+  
+            <!--IMG #2-->
+            <a  href="" class="col-12 col-md-5 w-50 fotos" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/messiucl.jpg" alt="messiucl" class="w-100 img-btn-modal">
+            </a>
+  
+            <!--IMG #3-->
+            <a href="" class="col-12 col-md-6 w-50 fotos" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+            <img src="img/leo-messi-levanta.webp" alt="leo-messi-levanta" class="w-100 h-100 img-btn-modal">
+            </a>
+      </div>
+    </div>
+</div>
+
+     <!--Modal (ventana emergente)-->
+     <div class="modal fade" id="modal-portfolio"> <!--es contenedor del tipo modal y tiene una transición suave-->
+      <div class="modal-dialog modal-dialog-centered"> <!--el contenedor de la imagen va a estar centrado-->
+       <img src="" class="w-100 img-modal"> <!--tamaño de la imagen-->
+      </div>
+     </div>
+
+
+
+     <!--Imagenes debajo de la galería-->
+     <section class="w-100 d-flex justify-content-center">
+      <div id="imagenes">
+        <img src="img/23.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/10.jpg" alt="">
+        <img src="img/7.jpg" alt="">
+        <img src="img/24.jpg" alt="">
+        <img src="img/9.jpg" alt="">
+        <img src="img/11.jpg" alt="">
+        <img src="img/26.jpg" alt="">
+        </div>
+     </section>
+ </main>
+ <!--Línea para separar contenidos de un mismo tema-->
+ <hr/>
+ </div>
+
+
+
+
+ <!--SECCIÓN MARCAS-->
+<div class="bg-secondary">
+<div class="contenedor-marcas">
+
+  <div class="row align-items-center justify-content-around py-3 sec-clientes">
+
+    <!--Elemento #1-->
+    <a href="#" class="col-sm-5 col-md-3 text-center">
+      <img src="img/jordan.png" alt="jordan" class="img-fluid">
+    </a>
+
+     <!--Elemento #1-->
+     <a href="#" class="col-sm-5 col-md-3 text-center">
+      <img src="img/nike.png" alt="jordan" class="img-fluid">
+    </a>
+
+     <!--Elemento #1-->
+     <a href="#" class="col-sm-5 col-md-3 text-center">
+      <img src="img/adidas.png" alt="jordan" class="img-fluid">
+    </a>
+
+     <!--Elemento #1-->
+     <a href="#" class="col-sm-5 col-md-3 text-center">
+      <img src="img/puma.png" alt="jordan" class="img-fluid" >
+    </a>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!--CONTACTOS Y BARRA DE NAVEGACIÓN-->
+  <div class="contactos-y-nav">
+
+    <!--Contacto-->
+    <section id="contacto" class="row justify-content-center m-4">
+      <div class="d-flex justify-content-center py-4 px-3 contacto">
+        <p class="text-muted fw-light p-1 text-capitalize">contacta con nosotros:</p>
+        <a href="mailto:email@ejemplo.com.ar" class="text-decoration-none text-danger p-1">email@ejemplo.com.ar</a>
+      </div>
+    </section>
+
+
+    <!--Menú de navegación-->
+    <div class="row justify-content-center text-center">
+      <!--Logo-->
+      <a href="" class="navbar-brand">
+      <img src="img/mmessi.jpg" alt="">
+      </a>
+
+      <!--Items/Links-->
+        <div class="nav col-11 justify-content-center align-items-center mb-4">
+      <a href="index.html" class="nav-link active">Inicio</a>
+      <a href="#acerca-de" class="nav-link">Acerca de</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+
+    <!--Redes-->
+    <div class="redes-sociales mb-4">
+        <!--Fb-->
+        <a href="https://www.facebook.com/leomessi" target="_blank">
+          <img src="./img/icons/fb.png" alt="facebook" class="fb">
+        </a>
+        <!--Tw-->
+        <a href="https://twitter.com/Lionel_Messi_ID" target="_blank">
+          <img src="./img/icons/tw.png" alt="twitter" class="tw">
+        </a>  
+         <!--Ig-->
+         <a href="https://www.instagram.com/leomessi/" target="_blank">
+          <img src="./img/icons/ig.png" alt="instagram" class="ig">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  
+
+
+  <!--Footer-->
+  <footer class="bg-info text-center p-4">
+    © Messi 2023. All rights reserved
+  </footer>
+
+
+
+
+    <!-- JS Bootstrap -->
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+            crossorigin="anonymous"
+    ></script>
+    <!-- JS Main -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

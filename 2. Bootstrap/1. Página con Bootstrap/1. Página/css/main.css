@@ -1,0 +1,148 @@
+
+/*General*/
+:root {
+  --color-blue-medium: #8fe2e4;
+  --color-purple: #632ce7;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+  --color-yellow: #fac32c;
+}
+
+
+a {
+  color: inherit; /*para que herede el color de texto de la caja que lo contiene (elemento padre)*/
+}
+
+.container .row { 
+  margin-bottom: 3rem; /*margen inferior*/
+}
+
+
+
+
+
+
+
+/*BARRA DE NAVEGACIÓN*/
+/*Marca*/
+.navbar-brand img{ 
+  width: 1.5em; /*ancho de la imágen*/
+}
+
+/*Botón inicio*/
+.navbar-main .active { /*selecciona la clase "active" que está dentro de la clase "navbar-main"*/
+  text-transform: uppercase; /*texto en mayúscula*/
+  color: #ec390c; /*color texto*/
+}
+
+
+
+
+
+
+
+/*ENCABEZADO*/
+.header-main {
+  min-height: 100vh; /*para que el mínmo de alto ocupe el 100% de la pantalla*/
+  }
+
+
+/**iconos de redes sociales**/
+.redes-sociales a:hover {
+  filter: opacity(0.5);
+}
+
+.ig, .fb, .tw {
+width: 2em;  /*ancho*/
+height: auto; /*alto*/
+margin: 5px; /*margen*/
+}
+
+
+
+
+/**SECCIÓN ACERCA DE**/
+/*iconos*/
+.icon-acerca {
+width: 50px;
+height: 50px;
+padding: 10px;
+}
+
+
+
+/*SECCIÓN GALERÍA DE FOTOS*/
+/**Hover para las imágenes de la galería**/
+.portfolio-item img:hover {
+transform: scale(0.95); /*para que las imágenes se hagan más chiquitas cun*/
+transition: 0.4s;
+}
+
+
+a > img {
+  object-fit: cover; /*ajusta las imagenes a su contenedor sin distorcionarla, pero recortandola*/
+}
+
+
+
+/*Imagenes debajo de la galería*/
+#imagenes {
+  display: flex; /*contenedor flexible*/
+  width: 100%; /*ancho del contenedor*/
+  height: 400px; /*alto del contenedor*/
+  box-shadow: 1px 1px 2px black; /*sobra del contenedor*/
+  margin-bottom: 150px;
+}
+
+#imagenes img {
+  width: 0; /*ancho de la imagen*/
+  flex-grow: 1; /*se distribuya el ancho de las imagenes dentro del contenedor*/
+  object-fit: cover; /*la imagen se ajusta al contenedor pudiendo recortar los bordes*/
+  opacity: .6; /*la imagen se vea opaca*/
+  transition: .5s ease; /*trnasición suave para cuando se le aplique algún efecto*/
+}
+
+#imagenes img:hover {
+  cursor: pointer; /*se ponga la manito en el cursor*/
+  width: 300px; /*aumente el ancho de la imagen*/
+  opacity: 1; /*regrese a la opacidad normal*/
+  filter: contrast(120%); /*aumenta el contraste de la imagen*/
+}
+
+
+
+
+
+
+
+/*SECCIÓN MARCAS*/
+.contenedor-marcas img {
+  max-width: 100px; /*máximo de ancho*/
+  max-height: 80px; /*máximo de alto*/
+  margin: 0 40px; /*margin en el eje Y y eje X*/
+}
+
+.contenedor-marcas img:hover {
+  filter: opacity(.55); /*para que las imagenes se pongan opaca cuando el mouse pase por encima*/
+  transition: .3s; /*para que el hover no sea tan brusco sino suave*/
+}
+
+
+
+
+
+
+/*DISEÑO ADAPTABLE*/
+@media (max-width: 768px) {
+  .header-main {
+    height: initial; /*para que el contenedor tenga el alto que defina su elemento hijo*/
+    }
+
+  .contacto {
+  flex-direction: column; /*para que los elementos se pongan uno debajo del otro*/
+  align-items: center; /*para centrar horizontalmente los elementos*/
+    }
+  }
+
+
+

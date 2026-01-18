@@ -1,0 +1,66 @@
+
+  
+
+
+  /*Servicios*/
+  .servicios img {
+    max-width: fit-content;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+
+  .servicios img:hover {
+    transform: scale(1.05);
+  }
+
+
+  /* CARRUCEL */
+.carousel-item {
+  max-height: 500px; /* define la altura máxima del carrucel*/
+  background-color: rgb(103, 104, 105);
+  
+}
+
+.carousel-item img {
+  flex-grow: 1;
+  height: 500px;
+  object-fit: contain; 
+}
+
+
+
+
+  /* FOOTER */
+  .footer {
+    background-color: #343a40;
+    color: white;
+  }
+
+  .footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+  }
+
+  .footer a:hover {
+    color: #adb5bd;
+  }
+
+
+
+
+
+  /*DISEÑO ADAPTABLE*/
+  @media (max-width: 768px) {
+    .header-main {
+      height: initial; /*para que el contenedor tenga el alto que defina su elemento hijo*/
+      }
+  
+    .contacto {
+    flex-direction: column; /*para que los elementos se pongan uno debajo del otro*/
+    align-items: center; /*para centrar horizontalmente los elementos*/
+      }
+    }
+  

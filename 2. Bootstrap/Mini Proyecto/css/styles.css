@@ -1,0 +1,176 @@
+
+
+/* botones */
+.btns_css {
+    background-color: #ffe600;
+    color: #000000;
+    font-weight: 700;
+    
+  }
+
+  .btns_css:hover {
+    background-color: grey;
+    color: #000000;
+  }
+  
+
+
+
+
+
+/* navbar */
+.nav_css {
+  font-weight: 700;
+   text-align: center;
+  
+  .logo {
+    width: 100px;
+  }
+
+  a {
+    color: #4a4a4a; 
+  }
+
+  a:hover {
+    color: white;
+  }
+
+   
+
+}
+
+body {
+  background-color: #4a4a4a;
+}
+
+/* carousel */
+  .elemento_carousel {
+    position: relative;   /*para poder posicionar el botón dentro */
+  }
+
+.conocer_mas {
+    width: 100%; /* la sección ocupa el mismo ancho que la imágen */
+    position: absolute; /* poder posicionar el botón */
+    bottom: 0; /* posición del botón */
+    left: 50%;    /* para que quede centrado */
+    transform: translateX(-50%); /* mueve el contenedor del botón hacia la izquierda */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+  
+
+  a {
+    display: inline-block;
+    padding: 10px 20px;           
+    
+    text-decoration: none;      
+    border-radius: 30px;         
+    font-size: 16px;            
+    transition: all 0.3s ease;   /* Suaviza el hover */
+  }
+
+  a:hover {
+    background-color: #fff;      
+    color: #000;                 
+    border: 1px solid #000;     
+  }
+}
+
+
+
+/* main */
+main {
+  min-height: 100vh;
+
+  .vehiculos img {
+    border-radius: 5%;
+  }
+}
+
+
+
+
+/* footer */
+.footer_css a {
+  text-decoration: none;
+  
+}
+
+
+
+
+
+
+
+/* TABLETAS*/
+@media (min-width: 577px) and (max-width: 992px) {
+
+
+  /* boton conocer más */
+  .conocer_mas {
+    padding: 5px; /* menos padding para reducir el alto */
+
+    a {
+      font-size: 0.4rem; /* letra más pequeña */
+      padding: 5px 10px; /*menos padding para reducir el alto */
+     
+    }
+  }
+
+  
+
+    /* footer */
+  .footer_css {
+    text-align: center;
+  }
+
+
+}
+
+
+
+/* MOVIL */
+  @media (max-width: 576px) {
+
+
+/* carousel */
+
+.carousel img {
+  height: 200px;
+  width: auto;
+}
+  
+    .conocer_mas {
+    padding: 5px; /* menos padding para reducir el alto */
+
+    a {
+      font-size: 0.6rem; 
+      padding: 5px 10px;
+     
+    }
+  }
+
+  /* productos */
+  .vehiculos { 
+     img {
+      width: 70%;
+    display: block;
+    margin: 0 auto;
+
+     }
+   
+  }
+
+      
+    /* footer */
+  .footer_css {
+    text-align: center;
+    
+  }
+    
+
+}
+
+
+
+

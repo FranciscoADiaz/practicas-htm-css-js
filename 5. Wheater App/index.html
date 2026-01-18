@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación del Clima</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">
+        <img class="icono-clima" src="images/kj.webp" alt="Logo del clima" />
+        Clima
+      </h1>
+      <input id="obtener-ciudad" type="text" placeholder="Busca tu ciudad aquí" />
+    </header>
+    <main>
+      <div class="contenedor-info">
+        <h3 class="nombre-ciudad"></h3>
+        <p class="informacion-fecha">
+          <span class="dia"></span><span class="fecha"></span>
+        </p>
+        <h2 class="temperatura-clima"></h2>
+        <h3 class="condicion-clima"></h3>
+        <h3 class="humedad"></h3>
+      </div>
+    </main>
+  </body>
+</html>

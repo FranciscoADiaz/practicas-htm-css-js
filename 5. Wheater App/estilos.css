@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-image: url("images/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70%;
+  height: 100vh;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header .titulo {
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 0 0 50px black;
+}
+
+header .icono-clima {
+  width: 60px;
+  margin-bottom: -20px;
+  margin-right: 20px;
+}
+
+header #obtener-ciudad {
+  width: 300px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  outline: none;
+  box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.37);
+}
+
+
+main .contenedor-info {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 20px;
+  max-width: 300px;
+  min-height: 380px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+#obtener-ciudad {
+  text-align: center;
+}
+
+.nombre-ciudad {
+  font-size: 23px;
+  margin: 20px 0;
+}
+
+.temperatura-clima {
+  font-size: 80px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.condicion-clima {
+  margin-bottom: 20px;
+}

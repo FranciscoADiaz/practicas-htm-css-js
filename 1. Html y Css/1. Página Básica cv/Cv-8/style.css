@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*CONTENEDOR GENERAL*/
+.contenedor {  
+    width: 70%; 
+    grid-template-columns: 30% 70%; 
+    display: grid;
+    margin: auto; 
+    box-shadow: 0 10px 20px #8f9097; 
+    font-family: 'Mynerve', cursive;
+    cursor: default; 
+}
+
+
+
+
+/*COLUMNA #1*/
+.col1 {
+    background: #0a9bdf; 
+    padding: 20px; 
+    border: 2px solid black; 
+}
+
+
+
+
+
+/*Perfil*/
+/*caja del perfil*/
+.perfil {  
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-bottom: 5%; 
+    border-bottom: 1px solid rgba(255,255,255,0.2); 
+}
+
+
+/*caja de la imagen*/
+.imagen {
+    text-align: center;
+}
+
+/*imagen*/
+.perfil .imagen img { 
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 100%;
+    border: 2px solid black;
+}
+/*texto h2*/
+.perfil h2 {
+    color: #fff; 
+    font-weight: 600; 
+    font-size: 100%; 
+    text-transform: uppercase;
+    text-align: center; 
+    margin-top: 20px; 
+}
+/*texto span*/
+.perfil h2 span {
+font-size: 0.8em;
+font-weight: 200;  
+text-align: center;
+}
+
+
+
+
+
+
+/*Información personal*/
+/*caja de información personal*/
+.Infopersonal {
+    display: flex; 
+    flex-direction: column; 
+    padding-top: 40px; 
+}
+/*texto h3*/
+.Infopersonal h3 {
+    color: #fff; 
+    font-size: 100%; 
+    text-transform: uppercase;
+    text-align: center; 
+    letter-spacing: 1px;
+    margin-bottom: 20px; 
+    margin-top: 30px; 
+    word-wrap: break-word; 
+}
+/*lista*/
+.Infopersonal ul li {
+    list-style: none;
+    margin: 10px; 
+    cursor: pointer; 
+    word-wrap: break-word; 
+}
+
+
+/*iconos*/
+.tel:hover {
+color: rgb(16, 231, 8); 
+}
+.cal:hover {
+ color: rgb(255, 254, 252);  
+}
+.cor:hover {
+ color: rgb(255, 1, 1);  
+}
+.corr:hover {
+ color: rgb(0, 45, 245);  
+}
+.ubi:hover {
+ color: rgb(251, 255, 0);
+}
+.texto:hover {
+ color: rgb(255, 255, 255); 
+}
+
+
+
+
+
+/**COLUMNA #2**/
+.col2 {  
+    background: #fff; 
+    padding: 20px; 
+    border: 2px solid black; 
+}
+
+
+/*Contenedor Experiencia*/
+.experiencia {
+    padding: 2%; 
+}
+
+
+/*cajas de experiencias*/
+.experiencia .caja {
+    display: flex; 
+    margin: 30px 0; 
+}
+/*cajita de años y empresa*/
+.experiencia .caja .años {
+    width: 70%; 
+    margin: 5% 5% 5% 0%; 
+}
+/*texto h5*/
+.experiencia .caja .años h5 {
+    text-transform: uppercase; 
+    color: #848c90; 
+    font-weight: 600; 
+}
+/*texto h4*/
+.experiencia .caja .detalles h4 {
+    text-transform: uppercase; 
+    color:#008cff; 
+    font-size: 16px; 
+}
+/*título experiencia y título habilidades*/
+.titulo {
+    text-align: center; 
+    color:#033b57; 
+}
+
+
+
+
+
+/*Contenedor Habilidades*/
+.habilidades {
+padding: 2%; 
+margin-top: 10%;    
+}
+/*cajas de habilidades*/
+.habilidades .caja {
+    margin: 30px 0; 
+}
+/*texto h4*/
+.habilidades .caja h4{
+    text-transform: uppercase; 
+    color:#008cff; 
+    font-size: 16px; 
+}
+/*logos*/
+.logo {
+    max-width: 30px; 
+    height: auto; 
+}
+
+/*manito para los párrafos*/
+p {
+    cursor: pointer;
+}
+
+
+
+
+.boton-pdf {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+button {
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 0 10px 20px #8f9097; 
+    background: #ff0000;
+}
+
+
+button a {
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+
+
+/*DISEÑO ADAPTABLE*/ 
+/*para que algunos textos se hagan más pequeños en dispositivos de pantalla 1200px hacia abajo que es medio y chico*/
+@media (max-width: 1200px) {
+p, .Infopersonal h3, span {
+font-size: 12px;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    }
+
+/*para que la imágen ocupe el 100% del contenedor asi no se ve tan chiquita*/
+.perfil .imagen img {
+    max-width: 100%;
+    height: auto;
+
+}
+    
+}
+
+
+
+
+
+
+/*ZOOM PARA LOS PÁRRAFOS*/
+.text {
+    transition: transform 0.3s; 
+  }
